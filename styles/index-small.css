@@ -1,0 +1,213 @@
+/* Gobal variable */
+
+:root {
+    --primary-color: #4a3267;
+    --secondary-color: #c6bade;
+    --background-color: #f8f6f6;
+    --highlight-color: #de638a;
+    --button-color:  #f7b9c4;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 30px auto 44px;
+    background-color: var(--primary-color);
+    align-items: center;
+}
+
+img.hero-logo {
+    width: 24px;
+    height: 24px;
+    padding: .4rem;
+    box-sizing: content-box;
+    
+}
+
+header span {
+    font-size: 2.8rem;
+    padding: .5rem;
+    color: white;
+
+}
+
+
+.hamburger {
+    display: block;
+    width: 38px;
+    height: 38px;
+    padding: 0.2rem;
+    font-size: 2.5rem;
+    margin: .3rem;
+    background: none;
+    border: none;
+    color: var(--button-color);
+    
+}
+
+.hamburger::before {
+content: "\2630";
+}
+
+.hamburger.show::before {
+content: "\00d7";
+}
+
+.navigation {
+    display: none;
+    grid-column: 1/4;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+
+.navigation ul a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    color: black;
+    border: 1px solid rgb(0 0 0 / 0.6);
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+main h2 {
+    margin-bottom: -15px;
+    font-size: 26px;
+    color: var(--primary-color)
+}
+
+main section{
+    margin: 24px 0 24px 0;
+    background-color: var(--background-color);
+    border: 1px solid rgb(0 0 0 / 0.2)
+}
+
+main h3 {
+    font-size: 18px;
+    margin: 0;
+    background-color: var(--secondary-color);
+    color: black;
+    padding: 1rem;
+
+}
+
+main p {
+    margin: 0;
+    padding: 1rem 1.2rem 1rem 1.2rem;
+    line-height: 1.5;
+}
+
+.img-cont {
+    width: 70%;
+    margin: .8rem auto;
+    border: 3px solid rgb(0 0 0 / 0.5);
+    border-radius: 5px;
+
+}
+
+.img-cont img {
+    width: 100%;
+    height: 100%;
+}
+
+.course-nav {
+    margin-top: .7rem;
+    display: flex;
+    gap: 10px;
+    padding: 0 1.2rem 0 1.2rem;
+    justify-content: space-between;
+}
+    
+.course-nav button {
+    display: block;
+    width: 50%;
+    padding: .8rem;
+    font-size: 1.6rem;
+    border-radius: 10px;
+}
+
+.credit {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--background-color);
+    padding: 15px;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.finfo, .fmodify{
+    font-size: 1.6rem;
+    margin-top: .7rem;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+.navigation ul a:hover, .course-nav button:hover{
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+
+}
+
+.navigation ul a:active {
+    background-color: var(--highlight-color);
+}
+
+.course-card {
+    padding: 0 1.2rem 0 1.2rem;
+    margin-top: 10px;
+    /* background-color: red; */
+
+}
+
+.course-card div {
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 0;
+    font-size: 1.6rem;
+
+    margin-top: 5px;
+    background-color: rgb(216, 214, 214);
+    text-align: center;
+}
+
+.course-card div.completed::before{
+    content: "✅";
+}
