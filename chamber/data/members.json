@@ -1,0 +1,94 @@
+{ "businesses": 
+[
+    {
+        "companyName": "Kisma Design",
+        "companyAddress": "Thinker's Village, Paynesville, Liberia",
+        "companyPhoneNumber": "+231-886717619",
+        "companyUrl": "www.kismadesign.com",
+        "image": "images/image-1.jpg",
+        "memberShipLevel": {
+            "1": "Silver",
+            "2": "Bronze",
+            "3": "Gold"
+        }
+    }, 
+
+    {
+        "companyName": "P & Sons",
+        "companyAddress": "Gabriel Smith Road, Thinker's Village",
+        "companyPhoneNumber": "+231-886-xxx-xxx",
+        "companyUrl": "www.p&sons.com",
+        "image": "images/image-2.jpg",
+        "memberShipLevel": {
+            "1": "Silver",
+            "2": "Bronze",
+            "3": "Gold"
+        }
+    },
+
+    {
+        "companyName": "Miatta's Shop",
+        "companyAddress": "30 Acres, Thinker's Village",
+        "companyPhoneNumber": "+231-886-xxx-xxx",
+        "companyUrl": "ww.miattashop.com",
+        "image": "images/image-3.jpg",
+        "memberShipLevel": {
+            "1": "Silver",
+            "2": "Bronze",
+            "3": "Gold"
+        }
+    }, 
+
+    {
+        "companyName": "Deco's Enterprise",
+        "companyAddress": "30 Acres, Thinker's Village",
+        "companyPhoneNumber": "+231-886-xxx-xxx",
+        "companyUrl": "www.deconenterprise.com",
+        "image": "images/image-4.jpg",
+        "memberShipLevel": {
+            "1": "Silver",
+            "2": "Bronze",
+            "3": "Gold"
+        }
+    },
+
+    {
+        "companyName": "93 Fashion House",
+        "companyAddress": "30 Acres, Thinker's Village",
+        "companyPhoneNumber": "+231-886-xxx-xxx",
+        "companyUrl": "www.93fashionhouse.com",
+        "image": "images/image-5.jpg",
+        "memberShipLevel": {
+            "1": "Silver",
+            "2": "Bronze",
+            "3": "Gold"
+        }
+    }, 
+
+    {
+        "companyName": "Haper Enterprise",
+        "companyAddress": "30 Acres, Thinker's Village",
+        "companyPhoneNumber": "+231-886-xxx-xxx",
+        "companyUrl": "haperenterprise.com",
+        "image": "images/image-6.jpg",
+        "memberShipLevel": {
+            "1": "Silver",
+            "2": "Bronze",
+            "3": "Gold"
+        }
+    },
+
+    {
+        "companyName": "Bassa Jalloh Business",
+        "companyAddress": "30 Acres, Thinker's Village",
+        "companyPhoneNumber": "+231-886-xxx-xxx",
+        "companyUrl": "www.bassajalloh.com",
+        "image": "images/image-7.jpg",
+        "memberShipLevel": {
+            "1": "Silver",
+            "2": "Bronze",
+            "3": "Gold"
+        }
+    }
+]
+}

@@ -1,0 +1,20 @@
+{
+    "familyName": "Williamson",
+    "date": "10/12/2026",
+    "numberOfPeople": 2,
+    "visitedByBishopric": true,
+
+    "familyMembers": [
+        {
+            "name": "John Williamson",
+            "gender": "male",
+            "birthdate": "11/12/2000"
+        },
+
+         {
+            "name": "Clara Williamson",
+            "gender": "female",
+            "birthdate": "12/4/2024"
+        }
+    ]
+}
