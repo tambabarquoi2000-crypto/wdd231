@@ -85,6 +85,10 @@ header .main {
     display: flex;
 }
 
+ul {
+    padding: 0;
+}
+
 
 .navigation li {
     list-style: none;
@@ -153,7 +157,7 @@ section:not(:first-child) {
     padding: .5rem 3rem;
     border-radius: 10px;
     border: none;
-    background-color: var(--primary-backgound-color);
+    background-color: var(--button-color);
     color: var(--header-color);
 }
 
