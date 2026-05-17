@@ -1,0 +1,259 @@
+:root{
+    --primary-backgound-color: #a0d6b4;
+    --secondary-background-color: #d5eddedc;
+    --header-color: #000080;
+    --text-color: #1626a6;
+    --button-color: #bf6ba0;
+    
+
+
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1, .cc-city {
+    color: var(--header-color);
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+
+
+/* Header */
+
+/* Set a 1 column grid on the header */
+header {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+/* Set a 3 column gird for header sub element with class main */
+header .main {
+    display: grid;
+    grid-template-columns: 48px 1fr 48px;
+    align-items: center;
+    gap: 10px;
+
+    background-color: var(--primary-backgound-color);
+    padding: 5px;
+}
+
+.cc-city {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.cc-city .larger {
+    font-size: 2rem;
+}
+
+
+/* Header navigations (all navigations items including hamburger button)*/
+
+.hamburger {
+    border: none;
+    font-size: 40px;
+    background: none;
+    color: #bf6ba0;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.open:before {
+    content: "\00d7";
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+}
+
+.menu.open {
+    display: flex;
+}
+
+
+.navigation li {
+    list-style: none;
+}
+.navigation li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 12px 1rem 12px 1rem;
+    background-color: var(--secondary-background-color);
+    font-size: 1.3rem;
+    color: var(--text-color);
+
+}
+
+.navigation li:not(:last-child) a {
+    border-bottom: 2px solid var(--primary-backgound-color);
+}
+
+
+
+
+
+/* _ _ _ _ Main */
+
+main h1 {
+    /* margin: 0; */
+    padding-left: 8px;
+    font-size: 2.4rem;
+    margin: 32px 0 5px 0;
+}
+
+section:not(:first-child) {
+    margin-bottom: 36px;
+    padding: 0 8px 0 8px;
+}
+
+
+.podcast div {
+    margin-bottom: 32px;
+    border:1.5px solid rgb(0 0 0 / 60%);
+    height: 300px;
+
+}
+
+.podcast div h2 {
+    padding: 5px;
+    text-align: center;
+    background-color: var(--secondary-background-color);
+    
+}
+
+.hero {
+    position: relative;
+}
+
+.key-note {
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+
+}
+
+.key-note button {
+    display: block;
+    padding: .5rem 3rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-backgound-color);
+    color: var(--header-color);
+}
+
+.hero img {
+    width: 100%;
+}
+
+.layout-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.layout-buttons button {
+    display: none;
+    width: 10%;
+    font-size: 26px;
+    padding: 10px;
+    background: none;
+    margin: 10px;
+    border: none;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    column-gap: 10px;
+    margin-bottom: 18px;
+    padding: 1rem 3px 1rem 3px;
+    border-radius: 7px;
+
+
+    background-color: var(--secondary-background-color);
+    
+}
+
+.card h2 {
+    margin-bottom: 12px;
+    grid-column: 1 / 3;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    /* box-shadow: 0 2px 2px black; */
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.contact-info p{
+    margin-bottom: 7px;
+    font-size: 1rem;
+
+}
+
+footer div{
+    margin-bottom: 18px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--secondary-background-color);
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+footer div p {
+    margin-bottom: 5px;
+    font: 1rem;
+}
+
+.f-heading {
+    display: block;
+    font-size: 18px;
+    color: var(--text-color)
+}
+
+.social-media {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+
+/* Pseudo Class and Navigations and Wayfinding */
+
+
+
+.navigation li a:hover{
+    border-bottom: 2px solid var(--button-color);
+}
+
+.layout-buttons button:hover{
+    background-color: var(--secondary-background-color);
+    color: black;
+}

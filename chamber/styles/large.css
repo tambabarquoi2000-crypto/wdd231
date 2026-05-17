@@ -1,0 +1,124 @@
+@media (min-width: 768px) {
+    
+    main h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 18px;
+        color: var(--text-color);
+    }
+
+    .cc-city .larger {
+        font-size: 2.5rem;
+    }
+
+    .cc-city {
+        font-size: 1.2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        /* flex-wrap: wrap; */
+        gap: 2%;
+        justify-content: flex-end;
+        padding-right: 10px;
+        
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--primary-backgound-color);
+    }
+
+    .menu {
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .navigation li a {
+        background-color: none;
+    }
+
+    .navigation li a {
+    width: 100%;
+    padding: 12px 1rem 12px 1rem;
+    background: none;
+    font-size: 1.5rem;
+
+}
+
+    .key-note {
+        display: none;
+}
+     
+    .podcast {
+        display: grid;
+        grid-template-columns: 50% 1fr 1fr;
+        gap: 20px;
+    }
+
+    .podcast div h2 {
+        text-align: left;
+    }
+
+    .layout-buttons button {
+        display: block;
+        background-color: var(--button-color);
+        color: white;
+        border-radius: 7px;
+        border-bottom: 1px solid black;
+        box-shadow: -2px 3px 5px black;
+    }
+
+    .business-card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+        gap: 20px;
+        justify-content: center;
+    }
+
+    table {
+        width: 80%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+
+    th {
+        font-size: 1.8rem;
+        text-align: left;
+        background-color: var(--primary-backgound-color);
+        color: var(--header-color);
+        
+
+    }
+
+    td {
+        font-size: 1.2rem;
+        color: var(--text-color);
+    }
+
+    th, td {
+        padding: 10px;
+        border: 1px solid black;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: var(--secondary-background-color);
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: aliceblue;
+    }
+
+}

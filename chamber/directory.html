@@ -14,9 +14,13 @@
 
     <!--css files-->
     <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="styles/">
-    <link rel="stylesheet" href="styles/">
-    <link rel="stylesheet" href="styles/">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 
     <!-- Meta links -->
     <meta property="og:title" content="Chamber Project">
@@ -27,10 +31,14 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Paynesville Commerce Office" width="48" height="48">
-        <h1>Paynesville Chamber of Commerce</h1>
+        <div class="main">
+            <img src="images/logo.png" alt="Paynesville Commerce Office" width="48" height="48">
+            <div class="cc-city"><span class="larger">Paynesville</span><br>Chamber of Commerce</div>
+            <button id="menu-button" class="hamburger" aria-label="menu-button"></button>
+        </div>
+        
 
-        <nav>
+        <nav id="menu" class="navigation menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">Directory</a></li>
             <li><a href="#">Join</a></li>
@@ -54,15 +62,15 @@
                     >
 
                 </picture>
-                <div>
-                    <button>Key Note Tickets</button>
+                <div class="key-note">
+                    <button aria-label="knt-button">Key Note<br>Tickets</button>
                 </div>
             </div>
         
         </section>
 
-        <section>
-            <h1>Home</h1>
+        <h1>Home</h1>
+        <section class="podcast">
             <div>
                 <h2>Events</h2>
             </div>
@@ -75,30 +83,32 @@
         </section>
 
         
-        <section>
-            <div>
+        <section class="business">
+            <div class="layout-buttons">
                 <button id="grid">Grid</button>
                 <button id="list">List</button>
-            </div id="business-cards"><div>
             </div>
+
+            <div id="business-cards"></div>
+            
         </section>
     </main>
 
     <footer>
         <div>
-            <p>Paynesville Chamber of Commerce</p>
+            <p><span class="f-heading">Paynesville Chamber of Commerce</span></p>
             <p>30 Acres, Thinker's Village</p>
             <p>Paynesville, Mail 1000</p>
             <p>info@Paynesvillecc.com</p>
             <p>(231) 887 717619</p>
         </div>
-        <div>
+        <div class="social-media">
             <a href=""><img src="images/github-svgrepo-com.svg" alt="gethub official logo" width="48px" height="48px"></a>
             <a href=""><img src="images/linkedin-svgrepo-com.svg" alt="linkedin official logo" width="48px" height="48px"></a>
             <a href=""><img src="images/microsoft-teams.svg" alt="microsoft-teams official logo" width="48px" height="48px"></a>
         </div>
         <div>
-            <p>WDD231 Class Project</p>
+            <p><span class="f-heading">WDD231 Class Project</span></p>
             <p>Tamba Barquoi</p>
             <p><span id="current-year"></span> | Paynesville Chamber of Commerce</p>
             <p><span id="last-modified"></span></p>
