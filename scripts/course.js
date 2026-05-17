@@ -89,6 +89,7 @@ const wddCourses = courses.filter(obj => obj.subject == "WDD");
 // output of the array items //
 
 const coursedisplay = document.querySelector("#course-info");
+const totalCredits = document.querySelector("#total-credit");
 
 // array navigation buttons //
 
@@ -108,6 +109,8 @@ courses.forEach(
         }
         courseCard.innerHTML = `${course.subject} ${course.number}`;
         courseCardList.appendChild(courseCard)
+
+        totalCredits.innerHTML = getCourseCredit(courses);
     }
 ) 
 
@@ -134,6 +137,7 @@ allCoursesBtt.addEventListener("click", () =>
     
     coursedisplay.innerHTML = "";
     coursedisplay.appendChild(courseCardList);
+    totalCredits.innerHTML = getCourseCredit(courses);
 }
 
 )
@@ -152,6 +156,7 @@ cseBtt.addEventListener("click", () => {
             courseCard.innerHTML = `${course.subject} ${course.number}`;
 
             csecourseCardList.appendChild(courseCard);
+            totalCredits.innerHTML = getCourseCredit(cseCourses);
         }
 
         
@@ -175,6 +180,7 @@ wddBtt.addEventListener("click", () => {
             courseCard.innerHTML = `${course.subject} ${course.number}`;
 
             wddcourseCardList.appendChild(courseCard);
+            totalCredits.innerHTML = getCourseCredit(wddCourses);
         }
 
         
@@ -188,15 +194,21 @@ wddBtt.addEventListener("click", () => {
 }
 
 
+
 function createElement(element){
     return document.createElement(element)
 }
 
-// function addCourseCredit(lst, objKey){
-//     lst.reduce{
-//         () => agr 
-//     }
-// }
+function getCourseCredit(arr){
+    
+    const result = arr.reduce((acc, crr) => {
+        return acc + crr.credits;
+    }, 0)
+
+    return result;
+  
+}
+
 
 
 main();
