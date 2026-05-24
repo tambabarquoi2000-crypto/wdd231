@@ -10,6 +10,7 @@
 
 }
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -26,6 +27,7 @@ h2 {
 
 p {
     color: var(--text-color);
+    font-size: 1rem;
 }
 
 
@@ -79,6 +81,7 @@ header .main {
 .menu {
     display: none;
     flex-direction: column;
+    
 }
 
 .menu.open {
@@ -112,7 +115,7 @@ ul {
 
 
 
-/* _ _ _ _ Main */
+/* _ _ _ _ Main _ _ _ _ _*/
 
 main h1 {
     /* margin: 0; */
@@ -126,13 +129,54 @@ section:not(:first-child) {
     padding: 0 8px 0 8px;
 }
 
+/* weather section */
 
-.podcast div {
+.podcast div:not(#current-weather div, .forcast-div) {
     margin-bottom: 32px;
     border:1.5px solid rgb(0 0 0 / 60%);
-    height: 300px;
+
 
 }
+
+
+
+
+.weather-grid {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    margin: 1rem;
+    align-items: center;
+
+}
+
+.weather-grid p{
+    margin: 5px;
+
+}
+
+.forcast-div {
+    margin: 1rem;
+}
+
+.forcast-div p {
+    margin-bottom: 1.3rem;
+    font-size: 1.5rem;
+}
+
+.forcast-div .highlight {
+    font-weight: bold;
+}
+
+
+.w-img {
+    display: block;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    
+}
+
+
 
 .podcast div h2 {
     padding: 5px;
@@ -152,13 +196,17 @@ section:not(:first-child) {
 
 }
 
-.key-note button {
+.key-note a {
     display: block;
-    padding: .5rem 3rem;
-    border-radius: 10px;
+    padding: .6rem 1rem;
+    border-radius: 25px;
     border: none;
     background-color: var(--button-color);
     color: var(--header-color);
+    text-align: center;
+    font-size: 1.4rem;
+    /* line-height: 0; */
+    text-decoration: underline;
 }
 
 .hero img {
@@ -181,6 +229,11 @@ section:not(:first-child) {
     border: none;
 }
 
+.business-card {
+    width: 95%;
+    margin: 0 auto;
+}
+
 .card{
     display: grid;
     grid-template-columns: 30% 1fr;
@@ -193,6 +246,8 @@ section:not(:first-child) {
     background-color: var(--secondary-background-color);
     
 }
+
+
 
 .card h2 {
     margin-bottom: 12px;
@@ -260,4 +315,10 @@ footer div p {
 .layout-buttons button:hover{
     background-color: var(--secondary-background-color);
     color: black;
+}
+
+
+.navigation li a:active{
+
+    background-color: var(--button-color);
 }

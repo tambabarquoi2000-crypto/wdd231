@@ -7,11 +7,7 @@
         "companyPhoneNumber": "+231-886717619",
         "companyUrl": "www.kismadesign.com",
         "image": "data/images/image-1.jpg",
-        "memberShipLevel": {
-            "1": "Silver",
-            "2": "Bronze",
-            "3": "Gold"
-        }
+        "memberShipLevel": "bronze"
     }, 
 
     {
@@ -21,11 +17,7 @@
         "companyPhoneNumber": "+231-886-xxx-xxx",
         "companyUrl": "www.p&sons.com",
         "image": "data/images/image-2.jpg",
-        "memberShipLevel": {
-            "1": "Silver",
-            "2": "Bronze",
-            "3": "Gold"
-        }
+        "memberShipLevel": "silver"
     },
 
     {
@@ -35,11 +27,7 @@
         "companyPhoneNumber": "+231-886-xxx-xxx",
         "companyUrl": "ww.miattashop.com",
         "image": "data/images/image-3.jpg",
-        "memberShipLevel": {
-            "1": "Silver",
-            "2": "Bronze",
-            "3": "Gold"
-        }
+        "memberShipLevel": "gold"
     }, 
 
     {
@@ -49,11 +37,7 @@
         "companyPhoneNumber": "+231-886-xxx-xxx",
         "companyUrl": "www.deconenterprise.com",
         "image": "data/images/image-4.jpg",
-        "memberShipLevel": {
-            "1": "Silver",
-            "2": "Bronze",
-            "3": "Gold"
-        }
+        "memberShipLevel": "silver"
     },
 
     {
@@ -63,11 +47,7 @@
         "companyPhoneNumber": "+231-886-xxx-xxx",
         "companyUrl": "www.93fashionhouse.com",
         "image": "data/images/image-5.jpg",
-        "memberShipLevel": {
-            "1": "Silver",
-            "2": "Bronze",
-            "3": "Gold"
-        }
+        "memberShipLevel": "silver"
     }, 
 
     {
@@ -77,11 +57,7 @@
         "companyPhoneNumber": "+231-886-xxx-xxx",
         "companyUrl": "haperenterprise.com",
         "image": "data/images/image-6.jpg",
-        "memberShipLevel": {
-            "1": "Silver",
-            "2": "Bronze",
-            "3": "Gold"
-        }
+        "memberShipLevel": "gold"
     },
 
     {
@@ -91,11 +67,7 @@
         "companyPhoneNumber": "+231-886-xxx-xxx",
         "companyUrl": "www.bassajalloh.com",
         "image": "data/images/image-7.jpg",
-        "memberShipLevel": {
-            "1": "Silver",
-            "2": "Bronze",
-            "3": "Gold"
-        }
+        "memberShipLevel": "bronze"
     }
 ]
 }

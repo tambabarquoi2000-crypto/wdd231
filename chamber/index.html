@@ -18,10 +18,12 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/directory/members.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
+    <!-- Scripts -->
 
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/index/weather.js" defer></script>
+    <script src="scripts/index/featured.js" defer></script>
 
     <!-- Meta links -->
     <meta property="og:title" content="Chamber Project">
@@ -59,17 +61,47 @@
     </header>
 
     <main>
+        <section class="hero">
+            <div>
+                <picture>
+
+                    <source 
+                    media="(max-width: 768px)"
+                    srcset="images/hero-mobile.jpg"
+                    >
+
+                    <img 
+                    src="images/hero-large.jpg"
+                    alt="hero image"
+                    >
+
+                </picture>
+                <div class="key-note">
+                    <a href="#">Join <span style="color: #d5eddedc">Now</span></a>
+                </div>
+            </div>
+        
+        </section>
+
+        <h1>Home</h1>
+        <section class="podcast">
+            <div>
+                <h2>Events</h2>
+            </div>
+            <div id="current-weather">
+                <h2>Weather</h2>
+            </div>
+            <div id="forcast-weather">
+                <h2>Weather Forecast</h2>
+            </div>
+        </section>
 
         <section class="business">
             <h1>Business</h1>
-            <div class="layout-buttons">
-                <button id="grid">Grid</button>
-                <button id="list">List</button>
-            </div>
-
-            <div id="business-cards"></div>
+            <div id="featured-business"></div>
             
         </section>
+
     </main>
 
     <footer>

@@ -38,11 +38,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         background-color: var(--primary-backgound-color);
+        align-items: center;
     }
 
     .menu {
         flex-direction: row;
-        align-items: center;
 
     }
 
@@ -56,13 +56,18 @@
 
 }
 
-    .key-note {
-        display: none;
+    .key-note a{
+        display: block;
+        font-size: 3rem;
+        padding: 1rem 1.9rem 1rem 1.9rem;
+        border-radius: 40px;
+
+
 }
      
     .podcast {
         display: grid;
-        grid-template-columns: 50% 1fr 1fr;
+        grid-template-columns: 45% 1fr 1fr;
         gap: 20px;
     }
 
@@ -79,7 +84,7 @@
         box-shadow: -2px 3px 5px black;
     }
 
-    .business-card {
+    .business-card, #featured-business {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
         gap: 20px;
@@ -88,7 +93,7 @@
 
     table {
         width: 80%;
-        margin: 0 auto;
+        margin: 0 auto 2rem auto;
         border-collapse: collapse;
     }
 
