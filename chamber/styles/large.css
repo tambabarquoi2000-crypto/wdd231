@@ -34,6 +34,7 @@
         
     }
 
+
     header{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -65,6 +66,13 @@
 
 }
      
+    main h1 {
+        /* margin: 0; */
+        padding-left: 8px;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
     .podcast {
         display: grid;
         grid-template-columns: 45% 1fr 1fr;
@@ -76,7 +84,6 @@
     }
 
     .layout-buttons button {
-        display: block;
         background-color: var(--button-color);
         color: white;
         border-radius: 7px;
@@ -97,14 +104,8 @@
         border-collapse: collapse;
     }
 
-    th {
-        font-size: 1.8rem;
-        text-align: left;
-        background-color: var(--primary-backgound-color);
-        color: var(--header-color);
-        
 
-    }
+
 
     td {
         font-size: 1.2rem;
@@ -116,12 +117,6 @@
         border: 1px solid black;
     }
 
-    tbody tr:nth-child(even) {
-        background-color: var(--secondary-background-color);
-    }
-
-    tbody tr:nth-child(odd) {
-        background-color: aliceblue;
-    }
+    
 
 }
