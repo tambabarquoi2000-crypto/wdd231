@@ -209,6 +209,12 @@ section:not(:first-child) {
     text-decoration: underline;
 }
 
+.business .heading {
+    font-size: 2.3rem;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
 .hero img {
     width: 100%;
 }
