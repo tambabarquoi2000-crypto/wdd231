@@ -32,7 +32,7 @@ form fieldset legend {
 form fieldset label:not(.radio-container label) {
     display: block;
     margin-bottom: 1rem;
-    font-size: 1.rem;
+    font-size: 1rem;
     color: var(--text-color);
 }
 
@@ -65,8 +65,8 @@ form button {
     border: 1px solid rgb(0 0 0 / 20%);
     border-radius: 5px;
     font-size: 1.2rem;
-    color: blue;
-    background-color: var(--button-color);
+    color: white;
+    background-color: var(--text-color);
     box-shadow: 0 2px 5px black;
 }
 

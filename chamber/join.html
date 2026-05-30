@@ -6,7 +6,7 @@
     <meta name="author" content="Tamba Barquoi">
     <meta name="description" content="A business chamber where local businesses meet and share portfolio with larger business.">
     <meta name="author" content="Tamba Barquoi">
-    <title>Paynesville City Chamber of Commerce Directory</title>
+    <title>Paynesville City Chamber of Commerce Join Us</title>
 
     <!--links-->
     <link rel="icon" href="images/favicon.png">
@@ -63,33 +63,35 @@
     </header>
 
     <main>
-        <form method="get" action="thanks.html">
+
+        <form method="get" action="thankyou.html">
             <fieldset class="personal-info">
+                <h1>Sign up</h1>
                 <legend>Personal Information</legend>
                 <div id="msg"></div>
                 <label for="fname">First Name<span class="required">*</span>
-                    <input type="text" id="fname" name="fname" required autocomplete="given-name">
+                    <input type="text" id="fname" name="fname" required autocomplete="given-name" title="First Name">
                 </label>
                 <label for="lname">Last Name<span class="required">*</span>
-                    <input type="text" id="lname" name="lname" required autocomplete="family-name">
+                    <input type="text" id="lname" name="lname" required autocomplete="family-name" title="Last Name">
                 </label>
                 <label for="org-title">Organization Title<span class="required">*</span>
-                    <input type="text" id="org-title" name="orgtitle" required autocomplete="organization-title">
+                    <input type="text" id="org-title" name="orgtitle" required autocomplete="organization-title" title="Organization Title">
                 </label>
             </fieldset>
             <fieldset>
                 <legend>Contact Information</legend>
                 <label for="email">Email<span class="required">*</span>
-                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="someone@gmail.com">
+                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="someone@gmail.com" title="Email">
                 </label>
                 <label for="phone">Phone<span class="required">*</span>
-                    <input type="tel" id="phone" name="phone" required autocomplete="tel">
+                    <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Phone Number">
                 </label>
             </fieldset>
             <fieldset>
                 <legend>Brand Identity</legend>
                 <label for="bname">Organization/Business Name<span class="required">*</span>
-                    <input type="text" required id="bname" name="bname" autocomplete="organization">
+                    <input type="text" required id="bname" name="bname" autocomplete="organization" title="Organization Name">
                 </label>
                 <div class="radio-container">
                     <span>Membership Level</span>
@@ -111,18 +113,17 @@
                     </label>
                 </div>
                 <label for="description">Organization/Business Description
-                    <textarea name="description" id="description"></textarea>
-                </label>
+                    <textarea name="description" id="description" title="description"></textarea>
                 </label>
                 <label for="timestamp">
-                    <input type="hidden" name="timestamp" id="time-stamp">
+                    <input type="hidden" name="timestamp" id="time-stamp" title="timestamp">
                 </label>
             </fieldset>
             <button type="submit">Join</button>
         </form>
 
         <div id="membership-details" class="membership-details"></div>
-        <div id="modal"><div>
+        <div id="modal"></div>
     </main>
 
     <footer>
