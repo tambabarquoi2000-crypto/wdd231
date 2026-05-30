@@ -1,0 +1,47 @@
+{"memberShipLevel": [
+
+    {
+    "level": "np",
+    "title": "Non Profit Membershiplevel",
+    "fees": 0,
+    "benefits": ["Free access to our database"]
+},
+
+{
+    "level": "bronze",
+    "title": "Bronze Membership Level",
+    "fees": 50,
+    "benefits": [
+        "Free access to our rich database of business",
+        "Business optimization"
+    ]
+},
+
+{
+    "level": "silver",
+    "title": "Silver Membership Level",
+    "fees": 75,
+    "benefits": [
+        "Free access to our rich database of business",
+        "Business optimization",
+        "Weekly broadcast on our social media platforms"
+    ]
+},
+
+{
+    "level": "gold",
+    "title": "Gold Membership Level",
+    "fees": 100,
+    "benefits": [
+        "Free access to our rich database of business",
+        "Business optimization",
+        "Weekly broadcast on our social media platforms",
+        "data security",
+        "spotlight promotions"
+    ]
+
+}
+
+]
+
+}

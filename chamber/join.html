@@ -17,11 +17,15 @@
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <!-- Scripts -->
 
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/directory/members.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/regExp.js" defer></script>
+    <script src="scripts/timeStamp.js" defer></script>
 
     <!-- Meta links -->
     <meta property="og:title" content="Chamber Project">
@@ -59,17 +63,66 @@
     </header>
 
     <main>
+        <form method="get" action="thanks.html">
+            <fieldset class="personal-info">
+                <legend>Personal Information</legend>
+                <div id="msg"></div>
+                <label for="fname">First Name<span class="required">*</span>
+                    <input type="text" id="fname" name="fname" required autocomplete="given-name">
+                </label>
+                <label for="lname">Last Name<span class="required">*</span>
+                    <input type="text" id="lname" name="lname" required autocomplete="family-name">
+                </label>
+                <label for="org-title">Organization Title<span class="required">*</span>
+                    <input type="text" id="org-title" name="orgtitle" required autocomplete="organization-title">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="email">Email<span class="required">*</span>
+                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="someone@gmail.com">
+                </label>
+                <label for="phone">Phone<span class="required">*</span>
+                    <input type="tel" id="phone" name="phone" required autocomplete="tel">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Brand Identity</legend>
+                <label for="bname">Organization/Business Name<span class="required">*</span>
+                    <input type="text" required id="bname" name="bname" autocomplete="organization">
+                </label>
+                <div class="radio-container">
+                    <span>Membership Level</span>
+                    <label for="np">
+                        <input type="radio" name="membership" id="np" value="np">
+                         NP Membership
+                    </label>
+                    <label for="bronze">
+                        <input type="radio" id="bronze" name="membership" value="bronze">
+                         Silver Membership
+                    </label>
+                    <label for="silver">
+                        <input type="radio" name="membership" id="silver" value="silver">
+                         Gold Membership
+                    </label>
+                    <label for="gold">
+                        <input type="radio" name="membership" id="gold" >
+                         Bronze Membership
+                    </label>
+                </div>
+                <label for="description">Organization/Business Description
+                    <textarea name="description" id="description"></textarea>
+                </label>
+                </label>
+                <label for="timestamp">
+                    <input type="hidden" name="timestamp" id="time-stamp">
+                </label>
+            </fieldset>
+            <button type="submit">Join</button>
+        </form>
 
-        <section class="business">
-            <h1>Business</h1>
-            <div class="layout-buttons">
-                <button id="grid">Grid</button>
-                <button id="list">List</button>
-            </div>
-
-            <div id="business-cards"></div>
-            
-        </section>
+        <div id="membership-details" class="membership-details"></div>
+        <div id="modal"><div>
     </main>
 
     <footer>

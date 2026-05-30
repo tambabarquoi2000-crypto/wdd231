@@ -86,6 +86,8 @@ const cseCourses = courses.filter(obj => obj.subject == "CSE");
 
 const wddCourses = courses.filter(obj => obj.subject == "WDD");
 
+const myModal = document.querySelector("#course-details");
+
 // output of the array items //
 
 const coursedisplay = document.querySelector("#course-info");
@@ -103,11 +105,68 @@ courseCardList.classList.add("course-card");
 
 courses.forEach(
     course => {
-        const courseCard = createElement("div");
+        const courseCard = createElement("button");
+        courseCard.addEventListener("click", 
+            () => {
+                const courseCodeCont = document.createElement("div");
+                const courseTitle = document.createElement("p");
+                const credits = document.createElement("p");
+                const degrees = document.createElement("p");
+                const descrip = document.createElement("p");
+                const tech = document.createElement("p");
+
+                const courseCode = document.createElement("h2");
+                const closeModalBtt = document.createElement("button");
+                
+                courseCode.textContent = `${course.subject}${course.number}`;
+                closeModalBtt.textContent = "❌";
+                closeModalBtt.addEventListener("click", () => myModal.close())
+                courseCodeCont.appendChild(courseCode);
+                courseCodeCont.appendChild(closeModalBtt);
+
+                courseTitle.textContent = course.title;
+                credits.textContent = `${course.credits} credits`;
+                degrees.textContent = course.degrees;
+                descrip.textContent = course.description;
+
+                let techCoursesTxt = "";
+
+                for(let i=0; i<course.technology.length; i++){
+
+                    console.log(course.technology[i])
+
+                    if(i + 1 < parseInt(course.technology.length)){
+                        techCoursesTxt += course.technology[i] + ", "
+                    }
+
+                    else {
+                        techCoursesTxt += course.technology[i]
+                    }
+
+                }
+
+                tech.textContent = `Technology: ${techCoursesTxt}`;
+
+                myModal.textContent = "";
+
+                myModal.appendChild(courseCodeCont);
+                myModal.appendChild(courseTitle);
+                myModal.appendChild(credits);
+                myModal.appendChild(degrees);
+                myModal.appendChild(descrip);
+                myModal.appendChild(tech);
+
+                myModal.showModal();
+
+                
+                
+            }
+        )
         if (course.completed) {
             courseCard.classList.add("completed")
         }
         courseCard.innerHTML = `${course.subject} ${course.number}`;
+
         courseCardList.appendChild(courseCard)
 
         totalCredits.innerHTML = getCourseCredit(courses);
@@ -126,7 +185,7 @@ allCoursesBtt.addEventListener("click", () =>
 
     courses.forEach(
         course => {
-            const courseCard = createElement("div");
+            const courseCard = createElement("button");
             if (course.completed) {
             courseCard.classList.add("completed")
         }
@@ -149,7 +208,7 @@ cseBtt.addEventListener("click", () => {
 
     cseCourses.forEach(
         course => {
-            const courseCard = createElement("div");
+            const courseCard = createElement("button");
             if (course.completed) {
             courseCard.classList.add("completed")
         }
@@ -173,7 +232,7 @@ wddBtt.addEventListener("click", () => {
 
     wddCourses.forEach(
         course => {
-            const courseCard = createElement("div");
+            const courseCard = createElement("button");
             if (course.completed) {
             courseCard.classList.add("completed")
         }
@@ -190,6 +249,10 @@ wddBtt.addEventListener("click", () => {
     coursedisplay.appendChild(wddcourseCardList)
 }
 )
+
+
+
+
 
 }
 

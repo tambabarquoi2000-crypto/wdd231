@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+
+    <style>
+
+        h1 {
+            text-align: center;
+            font-size: 1.75rem;
+        }
+
+
+        dialog {
+            display: relative;
+            width: 400px;
+            height: 300px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 0 10px  rgb(0 0 0 / 50%);
+
+        }
+
+        ::backdrop {
+            background-color: rgb(0 0 0 / 50%)
+        }
+
+        dialog {
+            text-align: center;
+        }
+
+        dialog button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+        }
+        
+        #open-modal {
+            display: block;
+            margin: 0 auto;
+            padding: 1rem 1.5rem 1rem 1.5rem;
+            border: 1px soldi black;
+            border-radius: 10px;
+        }
+
+    </style>
+    
+    
+</head>
+<body>
+    <h1>HTML Modal</h1>
+    <button type="button" id="open-modal">Open Modal</button>
+    <dialog id="my-modal">
+        <h2>Modal Dialog</h2>
+        <p>This is a modal dialog.</p>
+        <button type="button" id="close-modal">❌</button>
+    </dialog>
+
+    <script >
+
+        const myModal = document.querySelector("#my-modal");
+        const openModal = document.querySelector("#open-modal");
+        const closeModal = document.querySelector("#close-modal");
+
+        openModal.addEventListener("click", () => myModal.showModal())
+
+        closeModal.addEventListener("click", () => myModal.close())
+
+    </script>
+
+</body>
+</html>

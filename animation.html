@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .login {
+            width: 90%;
+            max-width: 500px;
+            margin: 0 auto;
+            margin-top: 50px;
+
+        }
+
+        form fieldset {
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        form legend {
+            padding: 10px;
+        }
+
+        form legend h1 {
+            appearance: none;
+            font-size: 1.5rem;
+            font-weight: normal;
+
+        }
+
+
+
+        form label {
+            display: block;
+            font-size: 1rem;
+            flex-direction: column;
+            margin-bottom: 1.5rem;
+
+        }
+
+        form label input {
+            display: block;
+            width: 100%;
+            padding: 11px;
+            font-size: 1rem;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        form button {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+            font-size: 1rem;
+            padding: 11px 0 11px 0;
+            border: 1px solid black;
+            box-shadow: 0 2px 5px #999;
+            border-radius: 5px;
+
+        }
+
+       .arrow:hover {
+        display: inline-block;
+        font-size: 1rem;
+        transition: transform 0.8s ease-in-out;
+       }
+
+       .arrow {
+        transform: translateX(5px);
+       }
+
+        .loader {
+            display: flex;
+            justify-content: center;
+            padding: 11px;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .loader span {
+            display: inline-block;
+    
+            animation: loading 0.6s infinite alternate;
+        }
+
+        .loader span:nth-child(2) {
+
+            animation-delay: 1s;
+        }
+
+        .loader span:nth-child(3) {
+            animation-delay: 2s;
+        }
+
+        .loader span::after {
+            content: "•";
+            font-size: 1.5rem;
+        }
+
+
+        
+
+        @keyframes loading {
+            from {
+                transform: translateX(0);
+                opacity: 0.5;
+            }
+
+            to {
+                transform: translateX(20px);
+                opacity: 1;
+            }
+        }
+
+    
+
+    
+    </style>
+</head>
+<body>
+    <div class="login">
+
+        <form >
+            <fieldset>
+                <legend><h1>Login</h1></legend>
+                <label for="user-name">User Name <span class="required">*</span> <input type="text" id="user-name" name="user-name" required></label>
+                <label for="password">Password <span class="required">*</span><input type="password" id="password" name="password" required></label>
+                <button type="submit">Login <span class="arrow">→</span></button>
+
+                <div class="loader">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </fieldset>
+            
+        </form>
+    </div>
+    <div id="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+main {
+    margin: 1rem;
+    padding: 1px;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.7rem;
+
+}
+
+#info {
+    width: 95%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--secondary-background-color);
+    padding: 1rem;
+
+
+}
+
+#info p {
+    margin-bottom: 10px;
+}
