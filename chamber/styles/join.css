@@ -161,6 +161,7 @@ dialog ul {
 
 dialog ul li {
     margin: 3px 0;
+    box-sizing: border-box;
 }
 
 dialog button {
@@ -174,10 +175,6 @@ dialog button {
 
 }
 
-dialog ul li {
-    box-sizing: border-box;
-
-}
 
 /* Error styling */
 
