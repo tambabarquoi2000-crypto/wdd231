@@ -76,7 +76,7 @@
                     <input type="text" id="lname" name="lname" required autocomplete="family-name" title="Last Name">
                 </label>
                 <label for="org-title">Organization Title<span class="required">*</span>
-                    <input type="text" id="org-title" name="orgtitle" required autocomplete="organization-title" title="Organization Title">
+                    <input type="text" id="org-title" name="orgtitle" required autocomplete="organization-title" title="Organization Title" pattern="^[A-Za-Z] ( -[A-Za-z])*{7,}">
                 </label>
             </fieldset>
             <fieldset>
@@ -115,9 +115,7 @@
                 <label for="description">Organization/Business Description
                     <textarea name="description" id="description" title="description"></textarea>
                 </label>
-                <label for="timestamp">
                     <input type="hidden" name="timestamp" id="time-stamp" title="timestamp">
-                </label>
             </fieldset>
             <button type="submit">Join</button>
         </form>
