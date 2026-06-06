@@ -1,0 +1,62 @@
+{
+    "dealers":
+    [
+        {
+        "name": "Daniel Freeman",
+        "status": "Verified Dealer",
+        "location": "12 Street Sinkor",
+        "whatsapp": "https://wa.me/qr/KQX6NOQIHAMWG1",
+        "isOnPromo": true,
+        "img": ""
+    },
+    {
+        "name": "Gabriel David",
+        "status": "Verified Dealer",
+        "location": "10 Street Sinkor",
+        "whatsapp": "https://wa.me/qr/KQX6NOQIHAMWG1",
+        "isOnPromo": true,
+        "img": ""
+    },
+    {
+        "name": "Paul Freeman",
+        "status": "Verified Dealer",
+        "location": "18 Street Sinkor",
+        "whatsapp": "https://wa.me/qr/KQX6NOQIHAMWG1",
+        "isOnPromo": true,
+        "img": ""
+    },
+
+    {
+        "name": "James Elliot",
+        "status": "Verified Dealer",
+        "location": "Paynesville",
+        "whatsapp": "https://wa.me/qr/KQX6NOQIHAMWG1",
+        "isOnPromo": false,
+        "img": ""
+    },
+    {
+        "name": "Nathaniel Gibson",
+        "status": "Verified Dealer",
+        "location": "12 Street Sinkor",
+        "whatsapp": "https://wa.me/qr/KQX6NOQIHAMWG1",
+        "isOnPromo": true,
+        "img": ""
+    },
+    {
+        "name": "Daniel Freeman",
+        "status": "Unverified Dealer",
+        "location": "12 Street Sinkor",
+        "whatsapp": "https://wa.me/qr/KQX6NOQIHAMWG1",
+        "isOnPromo": false,
+        "img": ""
+    },
+    {
+        "name": "Daniel Freeman",
+        "status": "Verified Dealer",
+        "location": "12 Street Sinkor",
+        "whatsapp": "https://wa.me/qr/KQX6NOQIHAMWG1",
+        "isOnPromo": true,
+        "img": ""
+    }
+]
+}

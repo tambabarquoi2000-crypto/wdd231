@@ -1,0 +1,43 @@
+body{
+            padding: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        table td, th {
+            padding: 1rem;
+            border: 1px solid black;
+        }
+
+        h1{
+            color: #111827;
+        }
+
+        p {
+            color: #374151;
+        }
+
+        img{
+            display: block;
+            margin-bottom: 2rem;
+            width: 40%;
+            height: auto;
+        }
+
+
+
+tr:nth-child(even){
+    background-color: #f9f4fb;
+}
+
+tr:nth-child(odd):not(:first-child){
+    background-color: #f4f4f6;
+}
+
+tr:first-child{
+    background-color: black;
+    color: white;
+}
