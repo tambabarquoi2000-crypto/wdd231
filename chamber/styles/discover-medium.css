@@ -1,0 +1,35 @@
+@media (min-width: 641px) {
+
+.dis-card address {
+    text-align: center;
+}
+.dis-card {
+    
+    grid-template-areas: 
+    "photograph name"
+    "photograph address"
+    "photograph description"
+    "photograph button";
+}
+
+.dis-card img 
+{
+    
+    transition-property: transform, opacity;
+    transition-timing-function:ease-in-out;
+    transition-duration: 0.5s;
+
+
+}
+
+.dis-card figure {
+    overflow: hidden;
+}
+
+.dis-card img:hover
+{
+    transform: scale(1.08);
+    opacity: 70%;
+}
+  
+}

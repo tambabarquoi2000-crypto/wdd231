@@ -17,13 +17,15 @@
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/discover-small.css">
+    <link rel="stylesheet" href="styles/discover-medium.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
 
     <!-- Scripts -->
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/index/weather.js" defer></script>
-    <script src="scripts/index/featured.js" defer></script>
+    <script type="module" src="scripts/discover.mjs"></script>
 
     <!-- Meta links -->
     <meta property="og:title" content="Chamber Project">
@@ -61,47 +63,8 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div>
-                <picture>
-
-                    <source 
-                    media="(max-width: 768px)"
-                    srcset="images/hero-mobile.jpg"
-                    >
-
-                    <img 
-                    src="images/hero-large.jpg"
-                    alt="hero image"
-                    >
-
-                </picture>
-                <div class="key-note">
-                    <a href="#">Join Now</a>
-                </div>
-            </div>
-        
-        </section>
-
-        <h1>Home</h1>
-        <section class="podcast">
-            <div>
-                <h2>Events</h2>
-            </div>
-            <div id="current-weather">
-                <h2>Weather</h2>
-            </div>
-            <div id="forcast-weather">
-                <h2>Weather Forecast</h2>
-            </div>
-        </section>
-
-        <section class="business">
-            <h2 class="heading">Spotlight</h2>
-            <div id="featured-business"></div>
-            
-        </section>
-
+        <div id="user-msg" class="user-msg"></div>
+        <div id="places" class="places"></div>
     </main>
 
     <footer>

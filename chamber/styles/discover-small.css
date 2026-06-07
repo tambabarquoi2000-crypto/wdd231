@@ -1,0 +1,66 @@
+.places
+{
+    margin: 2rem auto;
+    width: 95%;
+
+}
+
+.dis-card {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--secondary-background-color);
+
+    display: grid;
+    gap: 14px;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "address"
+    "description"
+    "button";
+}
+
+.dis-card h2{
+    text-align: center;
+    grid-area: name;
+    font-size: 1.2rem;
+}
+
+.dis-card figure {
+    grid-area: photograph;
+}
+
+.dis-card address {
+    grid-area: address;
+}
+
+.dis-card p {
+    grid-area: description;
+}
+
+.dis-card button {
+    width: 50%;
+    margin: 7px auto;
+    grid-area: button;
+    font-size: 1rem;
+    padding: 12px 0;
+}
+
+.dis-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.user-msg {
+    width: 95%;
+    margin: 1.5rem auto;
+    padding: 1.2rem;
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.3rem;
+    
+}
