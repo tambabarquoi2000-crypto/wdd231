@@ -318,18 +318,21 @@ footer div{
 }
 
 footer {
+    width: 100%;
     text-align: center;
     background-color: var(--secondary-background-color);
     padding: 1.5rem 1rem;
 }
 
+
+
 footer div p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 5px;
     font: 1rem;
 }
 
 .f-heading {
-    display: block;
     font-size: 18px;
     color: var(--text-color)
 }

@@ -27,6 +27,7 @@ places.forEach(
         const img = document.createElement("img");
         img.setAttribute("src", place.imgUrl);
         img.setAttribute("alt", `image of ${place.name}`);
+        place.imgUrl == "images/skd.webp"? img.setAttribute("fetchpriority", "high") : img.setAttribute("loading", "lazy");
         // img.setAttribute("loading", "lazy");
         img.setAttribute("width", "300");
         img.setAttribute("height", "200");
