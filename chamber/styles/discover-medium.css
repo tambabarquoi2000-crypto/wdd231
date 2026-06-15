@@ -1,5 +1,9 @@
 @media (min-width: 641px) {
 
+.disch1 {
+    font-size: 2rem;
+}
+
 .dis-card address {
     text-align: center;
 }

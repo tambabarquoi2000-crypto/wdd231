@@ -1,0 +1,106 @@
+@media (min-width: 768px)
+{
+
+
+header {
+    display: grid; 
+    /* align-content: center; */
+    padding: 0.75rem 2.5rem;
+    grid-template-columns: 11rem 1fr;
+
+}
+
+
+.menu {
+    display: none;
+}
+
+/* reset the navigation to it default document flow behavior*/
+
+.navs {
+    position: static;
+    width: 100%;
+    height: auto;
+    transition: none;
+    transform: none;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 3rem;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.main-nav ul a{
+    text-decoration: none;
+    color: var(--heading-color)
+}
+
+.main-nav ul a::after{
+    content: "→";
+    display: inline-block;
+    margin-left: 5px;
+    
+    transition: transform 0.3 ease-in-out;
+}
+
+.main-nav ul a:hover{
+    color: var(--primary);
+}
+
+.main-nav ul a:hover::after{
+    transform: translateX(5px);
+}
+
+.expan-nav {
+    display: none;
+}
+
+
+
+/*Main
+    ====================================================================
+    */
+
+.regular {
+    margin: 6rem auto;
+    
+}
+
+
+/* --- dealers --- */
+.bsl-dealers {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr
+}
+
+.card {
+    margin-bottom: 0;
+}
+
+/* hot deal  and sponsor*/
+.hot-deal, .sponsor {
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+    "details photograph button";
+    height: 150px;
+
+}
+
+/* set the position of all items in the hot-deal card */
+.hd-img-cnt, .sp-img-cnt {
+    grid-area: photograph;
+    width: 125px;
+    height: 125px;
+    overflow: hidden;
+}
+
+.hd-btt-cnt, .sp-btt-cnt {
+
+    justify-self: center;
+}
+
+}

@@ -29,17 +29,18 @@ async function displayRandomDealers(disObj)
             card.setAttribute("class", "card");
 
             const imgCont = document.createElement("div"); // Image container
-            imgCont.setAttribute("class", "card-img");
+            imgCont.setAttribute("class", "img-cnt");
             const img = document.createElement("img");
             img.setAttribute("loading", "loading");
             img.setAttribute("src", `${dealer.imgUrl}`);
             img.setAttribute("alt", `product of dealer: ${dealer.name}`)
-            img.setAttribute("width", "100");
-            img.setAttribute("height", "100");
+            img.setAttribute("width", "300");
+            img.setAttribute("height", "200");
             imgCont.appendChild(img);
             imgCont.appendChild(img) // Place image in its parent container
 
             const div = document.createElement("div"); // Seller Details and WhatsApp container
+            div.setAttribute("class", "details-cnt");
 
             const deatails = document.createElement("div");
             deatails.innerHTML = 
@@ -51,6 +52,7 @@ async function displayRandomDealers(disObj)
             `
             const whatsApp = document.createElement("a");
             whatsApp.setAttribute("href", `${dealer.whatsapp}`);
+            whatsApp.setAttribute("class", "whatsapp");
             whatsApp.innerHTML = "WhatsApp"
 
             div.appendChild(deatails);  // Place child deatail in parent (div)
@@ -59,6 +61,23 @@ async function displayRandomDealers(disObj)
             const viewButton = document.createElement("button");
             viewButton.setAttribute("type", "button");
             viewButton.innerHTML = "View More";
+
+            viewButton.addEventListener("click", 
+                () => {
+                    const modal = document.querySelector("#my-modal");
+                    const closeModal = document.createElement("button");
+                    closeModal.textContent = "❌";
+                    const info = document.createElement("p");
+                    info.textContent = "This page is under construction. Nothing in viewmore for now.";
+
+                    modal.textContent = "";
+                    modal.appendChild(info);
+                    modal.appendChild(closeModal);
+                    
+                    modal.showModal();
+                    closeModal.addEventListener("click", () => modal.close());
+                }
+            )
 
             viewButton.addEventListener("click", () => console.log("This button is clicked!"))
 
@@ -91,7 +110,7 @@ async function displayRandomDealers(disObj)
 
 
 
-function generateRandIndex(range, genIndexList)
+function generateRandIndex(range, genIndexList=[])
     {
         let index = Math.floor(Math.random() * range);
 
@@ -126,4 +145,4 @@ function generateRandIndex(range, genIndexList)
 }
 
 
-export {displayRandomDealers};
+export {displayRandomDealers, generateRandIndex};

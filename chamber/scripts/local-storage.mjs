@@ -5,7 +5,7 @@ const recentVisit = Date.now();
 
 const userMsg = document.querySelector("#user-msg");
 
-function processLocalStorage(){
+function processLocalStorage(userMsg){
 
     const hasVisited = localStorage.getItem("hasVisited");
 

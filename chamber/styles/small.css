@@ -314,11 +314,10 @@ tbody tr:nth-child(even) {
 }
 
 footer div{
-    margin-bottom: 18px;
+    margin: 9px 0;
 }
 
 footer {
-    width: 100%;
     text-align: center;
     background-color: var(--secondary-background-color);
     padding: 1.5rem 1rem;
@@ -332,15 +331,17 @@ footer div p {
     font: 1rem;
 }
 
-.f-heading {
-    font-size: 18px;
-    color: var(--text-color)
-}
 
 .social-media {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
+}
+
+.social-media img
+{
+    display: block;
+    width: 100%;
 }
 
 

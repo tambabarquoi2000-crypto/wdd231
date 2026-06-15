@@ -7,7 +7,7 @@
         "location": "12 Street Sinkor",
         "whatsapp": "https://wa.me/qr/KQX6NOQIHAMWG1",
         "isOnPromo": true,
-        "img": ""
+        "imgUrl": "images/iphone.webp"
     },
     {
         "name": "Gabriel David",
@@ -15,15 +15,15 @@
         "location": "10 Street Sinkor",
         "whatsapp": "https://wa.me/qr/KQX6NOQIHAMWG1",
         "isOnPromo": true,
-        "img": ""
+        "imgUrl": "images/jordan.webp"
     },
     {
-        "name": "Paul Freeman",
+        "name": "Abel Freeman",
         "status": "Verified Dealer",
         "location": "18 Street Sinkor",
         "whatsapp": "https://wa.me/qr/KQX6NOQIHAMWG1",
         "isOnPromo": true,
-        "img": ""
+        "imgUrl": "images/lady-bag-a.webp"
     },
 
     {
@@ -32,7 +32,7 @@
         "location": "Paynesville",
         "whatsapp": "https://wa.me/qr/KQX6NOQIHAMWG1",
         "isOnPromo": false,
-        "img": ""
+        "imgUrl": "images/lady-bag-c.webp"
     },
     {
         "name": "Nathaniel Gibson",
@@ -40,23 +40,23 @@
         "location": "12 Street Sinkor",
         "whatsapp": "https://wa.me/qr/KQX6NOQIHAMWG1",
         "isOnPromo": true,
-        "img": ""
+        "imgUrl": "images/samsung.webp"
     },
     {
-        "name": "Daniel Freeman",
+        "name": "Bill Peters",
         "status": "Unverified Dealer",
         "location": "12 Street Sinkor",
         "whatsapp": "https://wa.me/qr/KQX6NOQIHAMWG1",
         "isOnPromo": false,
-        "img": ""
+        "imgUrl": "images/lady-bag-b.webp"
     },
     {
-        "name": "Daniel Freeman",
+        "name": "Joshua Flomo",
         "status": "Verified Dealer",
         "location": "12 Street Sinkor",
         "whatsapp": "https://wa.me/qr/KQX6NOQIHAMWG1",
         "isOnPromo": true,
-        "img": ""
+        "imgUrl": "images/fboots.webp"
     }
 ]
 }
