@@ -42,7 +42,7 @@ header {
     display: inline-block;
     margin-left: 5px;
     
-    transition: transform 0.3 ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .main-nav ul a:hover{
