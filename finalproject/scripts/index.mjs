@@ -2,11 +2,11 @@ import {setCurrentYear, setLastModified} from "./date.mjs";
 import {displayRandomPromo} from "./sponsor.mjs";
 import { displayRandomDealers } from "./dealers.mjs";
 import { displayRandomHotDeal } from "./hot-deals.mjs";
-import {openMenu} from "./menu.mjs";
+// import {openMenu} from "./menu.mjs";
 import { processLocalStorage } from "../../chamber/scripts/local-storage.mjs";
 
 // --- Run open menu for menu button functionality ---
-openMenu();
+// openMenu();
 
 
 // --- Current Year ---
