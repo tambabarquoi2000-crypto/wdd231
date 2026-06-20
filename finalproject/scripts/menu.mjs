@@ -11,6 +11,8 @@ function openMenu()
 )
 }
 
+openMenu();
+
 
 export {openMenu}
 

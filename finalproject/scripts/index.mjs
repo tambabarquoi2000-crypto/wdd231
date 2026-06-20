@@ -17,26 +17,23 @@ setCurrentYear(currentYear);
 
 console.log(location.pathname);
 
-if(location.pathname == "/finalproject/index.html")
-{
-    const sponsor = document.querySelector("#sponsor");
-    displayRandomPromo(sponsor);
+
+const sponsor = document.querySelector("#sponsor");
+displayRandomPromo(sponsor);
 
 
 // --- Dealers ---
 
-    const dealersSection = document.querySelector("#bsl-dealers");
-    displayRandomDealers(dealersSection);
+const dealersSection = document.querySelector("#bsl-dealers");
+displayRandomDealers(dealersSection);
 
-    // --- Hot Deals ---
-    const hotDeal = document.querySelector("#hot-deal");
-    displayRandomHotDeal(hotDeal);
+// --- Hot Deals ---
+const hotDeal = document.querySelector("#hot-deal");
+displayRandomHotDeal(hotDeal);
 
 
-    const wlcMsg = document.querySelector("#wlc-msg");
-    const div = document.createElement("div");
-    div.setAttribute("class", "msg");
-    wlcMsg.appendChild(div);
-    processLocalStorage(div);
-
-}
+const wlcMsg = document.querySelector("#wlc-msg");
+const div = document.createElement("div");
+div.setAttribute("class", "msg");
+wlcMsg.appendChild(div);
+processLocalStorage(div);
